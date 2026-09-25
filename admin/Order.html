@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maurya Carpet - Orders</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <h2>MAURYA</h2>
+            <span>CARPET</span>
+        </div>
+
+        <nav>
+            <a href="Dashboard.html">📊 Dashboard</a>
+            <a href="Product.html">🧶 Products</a>
+            <a href="Order.html" class="active">📦 Orders</a>
+            <a href="Customer.html">👥 Customers</a>
+            <a href="Enquiry.html">📩 Enquiries</a>
+        </nav>
+
+        <button class="logout-btn" onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Orders</h1>
+                <p>Manage Maurya Carpet Orders</p>
+            </div>
+
+            <div class="admin-name">
+                👤 Admin
+            </div>
+
+        </header>
+
+        <section class="orders-section">
+
+            <div class="section-header">
+                <h2>All Orders</h2>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Phone</th>
+                            <th>Carpet</th>
+                            <th>Size</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="ordersTableBody">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

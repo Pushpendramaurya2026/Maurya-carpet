@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Maurya Carpet - Premium carpets for beautiful spaces. Explore traditional, modern and luxury carpet collections.">
+
+    <title>Maurya Carpet | Premium Carpets</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <a href="#home" class="brand">
+
+        <svg class="logo"
+             viewBox="0 0 300 90"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="43" cy="45" r="36"
+                    fill="#691522"
+                    stroke="#d7ad55"
+                    stroke-width="3"/>
+
+            <path d="M25 35 L30 22 L43 31 L56 22 L61 35"
+                  fill="none"
+                  stroke="#d7ad55"
+                  stroke-width="4"/>
+
+            <text x="43"
+                  y="62"
+                  text-anchor="middle"
+                  font-family="Georgia"
+                  font-size="38"
+                  font-weight="bold"
+                  fill="#f6e5b2">
+                M
+            </text>
+
+            <text x="92"
+                  y="40"
+                  font-family="Georgia"
+                  font-size="32"
+                  font-weight="bold"
+                  fill="#d7ad55">
+                MAURYA
+            </text>
+
+            <text x="94"
+                  y="66"
+                  font-family="Montserrat"
+                  font-size="16"
+                  font-weight="600"
+                  letter-spacing="6"
+                  fill="#ffffff">
+                CARPET
+            </text>
+
+        </svg>
+
+    </a>
+
+
+    <nav id="navbar">
+
+        <a href="#home">Home</a>
+
+        <a href="#collection">Collection</a>
+
+        <a href="#about">About</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#contact">Contact</a>
+
+        <a href="admin/Login.html">Admin Login</a>
+
+    </nav>
+
+
+    <a href="#contact"
+       class="header-btn">
+        Enquire Now
+    </a>
+
+
+    <button class="menu-btn"
+            type="button"
+            onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="small-title">
+            PREMIUM CARPET COLLECTION
+        </span>
+
+        <h1>
+            Elegance
+            <br>
+            <span>Under Every Step.</span>
+        </h1>
+
+        <p>
+            Discover beautifully designed carpets that
+            bring warmth, luxury and character to your space.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#collection"
+               class="btn primary">
+                Explore Collection
+            </a>
+
+            <button type="button"
+                    class="btn secondary"
+                    onclick="openOrderForm()">
+                Order Now
+            </button>
+
+            <button type="button"
+                    class="btn secondary"
+                    onclick="openBookingForm()">
+                Book Now
+            </button>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>Premium</strong>
+                <span>Quality</span>
+            </div>
+
+            <div>
+                <strong>Elegant</strong>
+                <span>Designs</span>
+            </div>
+
+            <div>
+                <strong>Trusted</strong>
+                <span>Service</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+    <div class="heading">
+
+        <span>WELCOME TO MAURYA CARPET</span>
+
+        <h2>
+            Where Comfort Meets Elegance
+        </h2>
+
+        <p>
+            Beautiful carpets designed to make your
+            space feel special.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= COLLECTION ================= -->
+
+<section class="collection"
+         id="collection">
+
+    <div class="heading">
+
+        <span>OUR COLLECTION</span>
+
+        <h2>
+            Explore Our Carpets
+        </h2>
+
+        <p>
+            Choose from designs created for different
+            styles and spaces.
+        </p>
+
+    </div>
+
+
+    <div class="filters">
+
+        <button class="filter-btn active"
+                onclick="filterProducts('All', this)">
+            All
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterProducts('Traditional', this)">
+            Traditional
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterProducts('Modern', this)">
+            Modern
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterProducts('Luxury', this)">
+            Luxury
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS WILL COME FROM SCRIPT.JS -->
+
+    <div class="products"
+         id="productList">
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about"
+         id="about">
+
+    <div class="about-image">
+
+        <img src="carpet4.jpg"
+             alt="Maurya Carpet">
+
+        <div class="experience-box">
+
+            <strong>MAURYA</strong>
+
+            <span>CARPET</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <span class="section-label">
+            ABOUT MAURYA CARPET
+        </span>
+
+        <h2>
+            Adding Beauty<br>
+            To Every Space
+        </h2>
+
+        <p>
+            Maurya Carpet brings beautiful carpet
+            designs for homes, offices and interior spaces.
+        </p>
+
+        <p>
+            From timeless traditional patterns to
+            contemporary styles, we aim to provide
+            carpets that complement your space and
+            your personal style.
+        </p>
+
+        <a href="#contact"
+           class="text-btn">
+            Discover More →
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us">
+
+    <div class="heading">
+
+        <span>WHY MAURYA CARPET</span>
+
+        <h2>
+            Made For Beautiful Spaces
+        </h2>
+
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ✦
+            </div>
+
+            <h3>
+                Premium Quality
+            </h3>
+
+            <p>
+                Quality-focused carpet selection
+                for your space.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ◆
+            </div>
+
+            <h3>
+                Elegant Designs
+            </h3>
+
+            <p>
+                Traditional and modern designs
+                for different interiors.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ♡
+            </div>
+
+            <h3>
+                Customer First
+            </h3>
+
+            <p>
+                We focus on understanding your
+                requirements.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ⌂
+            </div>
+
+            <h3>
+                Every Space
+            </h3>
+
+            <p>
+                Beautiful options for homes,
+                offices and interiors.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery"
+         id="gallery">
+
+    <div class="heading">
+
+        <span>OUR GALLERY</span>
+
+        <h2>
+            A Glimpse Of Our Designs
+        </h2>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item large">
+
+            <img src="carpet1.jpg"
+                 alt="Traditional Carpet">
+
+            <div class="gallery-caption">
+                Traditional Elegance
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="carpet2.jpg"
+                 alt="Modern Carpet">
+
+            <div class="gallery-caption">
+                Modern Style
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="carpet8.jpg"
+                 alt="Luxury Carpet">
+
+            <div class="gallery-caption">
+                Luxury Collection
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="carpet9.jpg"
+                 alt="Premium Carpet">
+
+            <div class="gallery-caption">
+                Premium Design
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="carpet7.jpg"
+                 alt="Classic Carpet">
+
+            <div class="gallery-caption">
+                Classic Collection
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div>
+
+        <span>
+            FIND YOUR PERFECT CARPET
+        </span>
+
+        <h2>
+            Let's Make Your Space Beautiful.
+        </h2>
+
+        <p>
+            Talk to us about your carpet requirements.
+        </p>
+
+        <a href="#contact"
+           class="btn primary">
+            Send An Enquiry
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact"
+         id="contact">
+
+    <div class="heading">
+
+        <span>GET IN TOUCH</span>
+
+        <h2>
+            Let's Talk About Your Carpet
+        </h2>
+
+        <p>
+            Send us your requirement and we will
+            get back to you.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+
+        <div class="contact-details">
+
+            <h3>
+                Maurya Carpet
+            </h3>
+
+            <p>
+                We would love to help you find the
+                right carpet for your space.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <div>
+
+                    <small>
+                        PHONE
+                    </small>
+
+                    <strong>
+                        +91 94541587XX
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                <div>
+
+                    <small>
+                        EMAIL
+                    </small>
+
+                    <strong>
+                        Mauryacarpet@gmail.com
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <small>
+                        LOCATION
+                    </small>
+
+                    <strong>
+                        Bhadohi, Uttar Pradesh
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Mobile Number"
+                required
+            >
+
+
+            <select id="carpet">
+
+                <option value="">
+                    Select Collection
+                </option>
+
+                <option value="Traditional Collection">
+                    Traditional Collection
+                </option>
+
+                <option value="Modern Collection">
+                    Modern Collection
+                </option>
+
+                <option value="Luxury Collection">
+                    Luxury Collection
+                </option>
+
+            </select>
+
+
+            <textarea
+                id="message"
+                placeholder="Tell us about your requirement..."
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Send Enquiry →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <svg class="footer-logo"
+             viewBox="0 0 300 90"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="43"
+                    cy="45"
+                    r="36"
+                    fill="#691522"
+                    stroke="#d7ad55"
+                    stroke-width="3"/>
+
+            <text x="43"
+                  y="60"
+                  text-anchor="middle"
+                  font-family="Georgia"
+                  font-size="38"
+                  font-weight="bold"
+                  fill="#f6e5b2">
+                M
+            </text>
+
+            <text x="92"
+                  y="40"
+                  font-family="Georgia"
+                  font-size="32"
+                  font-weight="bold"
+                  fill="#d7ad55">
+                MAURYA
+            </text>
+
+            <text x="94"
+                  y="66"
+                  font-family="Montserrat"
+                  font-size="16"
+                  font-weight="600"
+                  letter-spacing="6"
+                  fill="#ffffff">
+                CARPET
+            </text>
+
+        </svg>
+
+        <p>
+            Premium carpets for beautiful spaces.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#collection">Collection</a>
+
+        <a href="#about">About</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Maurya Carpet.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed with Pushpendra Maurya.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a href="https://wa.me/9454158714"
+   class="whatsapp"
+   target="_blank"
+   aria-label="WhatsApp">
+
+    💬
+
+</a>
+
+
+
+<!-- ================= IMAGE MODAL ================= -->
+
+<div id="imageModal"
+     class="image-modal">
+
+    <span class="close-modal">
+        &times;
+    </span>
+
+    <img id="modalImage"
+         src=""
+         alt="Carpet Preview">
+
+</div>
+
+
+
+<!-- ================= ORDER MODAL ================= -->
+
+<div id="orderModal"
+     class="form-modal">
+
+    <div class="form-modal-content">
+
+        <button type="button"
+                class="close-form"
+                onclick="closeOrderForm()">
+            &times;
+        </button>
+
+
+        <h2>
+            Order Your Carpet
+        </h2>
+
+        <p>
+            Fill your details and place your order.
+        </p>
+
+
+        <form id="orderForm">
+
+            <input
+                type="text"
+                id="orderName"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="orderPhone"
+                placeholder="Mobile Number"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="orderCarpet"
+                placeholder="Carpet / Collection"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="orderSize"
+                placeholder="Carpet Size (e.g. 6x4 ft)"
+                required
+            >
+
+
+            <input
+                type="number"
+                id="orderQuantity"
+                placeholder="Quantity"
+                min="1"
+                value="1"
+                required
+            >
+
+
+            <textarea
+                id="orderMessage"
+                placeholder="Additional requirements..."
+            ></textarea>
+
+
+            <button type="submit">
+                Place Order →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= BOOKING MODAL ================= -->
+
+<div id="bookingModal"
+     class="form-modal">
+
+    <div class="form-modal-content">
+
+        <button type="button"
+                class="close-form"
+                onclick="closeBookingForm()">
+            &times;
+        </button>
+
+
+        <h2>
+            Book Your Carpet
+        </h2>
+
+        <p>
+            Fill your details and submit your booking.
+        </p>
+
+
+        <form id="bookingForm">
+
+            <input
+                type="text"
+                id="bookingName"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="bookingPhone"
+                placeholder="Mobile Number"
+                required
+            >
+
+
+            <select id="bookingCarpet"
+                    required>
+
+                <option value="">
+                    Select Collection
+                </option>
+
+                <option value="Traditional Collection">
+                    Traditional Collection
+                </option>
+
+                <option value="Modern Collection">
+                    Modern Collection
+                </option>
+
+                <option value="Luxury Collection">
+                    Luxury Collection
+                </option>
+
+            </select>
+
+
+            <input
+                type="text"
+                id="bookingSize"
+                placeholder="Required Size"
+            >
+
+
+            <input
+                type="date"
+                id="bookingDate"
+                required
+            >
+
+
+            <textarea
+                id="bookingMessage"
+                placeholder="Your requirement..."
+            ></textarea>
+
+
+            <button type="submit">
+                Submit Booking →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

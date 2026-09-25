@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Maurya Carpet - Enquiries</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <h2>MAURYA</h2>
+
+            <span>CARPET</span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="Dashboard.html">
+
+                📊 Dashboard
+
+            </a>
+
+
+            <a href="Product.html">
+
+                🧶 Products
+
+            </a>
+
+
+            <a href="Order.html">
+
+                📦 Orders
+
+            </a>
+
+
+            <a href="Customer.html">
+
+                👥 Customers
+
+            </a>
+
+
+            <a href="Enquiry.html"
+               class="active">
+
+                📩 Enquiries
+
+            </a>
+
+        </nav>
+
+
+        <button
+            class="logout-btn"
+            onclick="logout()">
+
+            🚪 Logout
+
+        </button>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Enquiries</h1>
+
+                <p>
+                    Manage Maurya Carpet Customer Enquiries
+                </p>
+
+            </div>
+
+
+            <div class="admin-name">
+
+                👤 Admin
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================
+             ENQUIRY SECTION
+        ========================== -->
+
+        <section class="orders-section">
+
+
+            <div class="section-header">
+
+                <h2>
+                    All Enquiries
+                </h2>
+
+            </div>
+
+
+            <div class="table-container">
+
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Name
+                            </th>
+
+                            <th>
+                                Phone
+                            </th>
+
+                            <th>
+                                Carpet
+                            </th>
+
+                            <th>
+                                Message
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="enquiriesTableBody">
+
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Maurya Carpet - Admin Dashboard</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head><body><div class="dashboard"><!-- =========================
+     SIDEBAR
+========================== -->
+
+<aside class="sidebar">
+
+    <div class="brand">
+
+        <h2>MAURYA</h2>
+
+        <span>CARPET</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="Dashboard.html"
+           class="active">
+
+            📊 Dashboard
+
+        </a>
+
+
+        <a href="Product.html">
+
+            🧶 Products
+
+        </a>
+
+
+        <a href="Order.html">
+
+            📦 Orders
+
+        </a>
+
+
+        <a href="Customer.html">
+
+            👥 Customers
+
+        </a>
+
+
+        <a href="Enquiry.html">
+
+            📩 Enquiries
+
+        </a>
+
+    </nav>
+
+
+    <button
+        class="logout-btn"
+        onclick="logout()">
+
+        🚪 Logout
+
+    </button>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<main class="main-content">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <h1>Dashboard</h1>
+
+            <p>
+                Welcome to Maurya Carpet Admin Panel
+            </p>
+
+        </div>
+
+
+        <div class="admin-name">
+
+            👤 Admin
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         DASHBOARD CARDS
+    ========================== -->
+
+    <section class="cards">
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📦
+            </div>
+
+            <div>
+
+                <h3 id="totalOrders">
+                    0
+                </h3>
+
+                <p>
+                    Total Orders
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                ⏳
+            </div>
+
+            <div>
+
+                <h3 id="pendingOrders">
+                    0
+                </h3>
+
+                <p>
+                    Pending Orders
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                ✅
+            </div>
+
+            <div>
+
+                <h3 id="completedOrders">
+                    0
+                </h3>
+
+                <p>
+                    Completed Orders
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                👥
+            </div>
+
+            <div>
+
+                <h3 id="totalCustomers">
+                    0
+                </h3>
+
+                <p>
+                    Customers
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RECENT ORDERS
+    ========================== -->
+
+    <section class="orders-section">
+
+
+        <div class="section-header">
+
+            <h2>
+                Recent Orders
+            </h2>
+
+
+            <button
+                type="button"
+                onclick="addDemoOrder()">
+
+                + Add Demo Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="table-container">
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Customer
+                        </th>
+
+                        <th>
+                            Phone
+                        </th>
+
+                        <th>
+                            Carpet
+                        </th>
+
+                        <th>
+                            Quantity
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="ordersTableBody">
+
+                </tbody>
+
+            </table>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         QUICK ACTIONS
+    ========================== -->
+
+    <section class="quick-actions">
+
+        <h2>
+            Quick Actions
+        </h2>
+
+
+        <div class="quick-buttons">
+
+
+            <a href="Product.html">
+
+                🧶 Manage Products
+
+            </a>
+
+
+            <a href="Product.html">
+
+                ➕ Add Carpet
+
+            </a>
+
+
+            <a href="#">
+
+                📦 Manage Orders
+
+            </a>
+
+
+            <a href="#">
+
+                📩 View Enquiries
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+</div><script src="admin.js"></script></body></html>
